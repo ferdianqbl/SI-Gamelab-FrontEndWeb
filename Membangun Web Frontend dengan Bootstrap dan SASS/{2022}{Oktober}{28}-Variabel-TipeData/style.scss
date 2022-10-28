@@ -1,0 +1,15 @@
+$text-color: #000;
+
+ul {
+  $text-color: blue;
+  $text-primary: red !global;
+
+  li {
+    color: $text-color;
+  }
+}
+
+
+span {
+  color: $text-primary;
+}
