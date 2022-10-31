@@ -1,0 +1,14 @@
+$main-padding: 20px;
+
+@function set-padding($padding) {
+  @return $main-padding + $padding;
+}
+
+body {
+  padding: set-padding(10px);
+}
+
+p {
+  padding: 0;
+  padding: set-padding(10px);
+}
