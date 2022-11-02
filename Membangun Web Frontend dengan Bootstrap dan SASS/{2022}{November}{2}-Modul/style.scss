@@ -1,0 +1,14 @@
+@use "variables";
+@import "heading";
+
+body {
+  background: variables.$secondary-color;
+}
+
+h1 {
+  color: variables.$primary-color;
+}
+
+p {
+  color: variables.$tertiary-color;
+}
