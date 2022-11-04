@@ -1,6 +1,20 @@
 @use "variables";
 @import "heading";
 
+@mixin button($primary: false) {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  @if $primary {
+    border-radius: 100px;
+    background: blanchedalmond;
+    color: black;
+  } @else {
+    color: white;
+    border-radius: 0.5rem;
+    background: variables.$primary-color;
+  }
+}
 body {
   background: variables.$secondary-color;
 }
@@ -9,6 +23,16 @@ h1 {
   color: variables.$primary-color;
 }
 
-p {
-  color: variables.$tertiary-color;
+@for $i from 1 through 3 {
+  .par-#{$i} {
+    color: variables.$tertiary-color;
+  }
+}
+
+.my-btn-primary {
+  @include button(true);
+}
+
+.my-btn-secondary {
+  @include button;
 }
