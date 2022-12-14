@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .dbl-click p {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="dbl-click">
+    <p>Double click on the button to change its text color.</p>
+    <button class="click-btn">Click me</button>
+    <button class="dbl-click-btn">Double Click me</button>
+
+  </div>
+  <div class="mouseenter">
+    <p>Hover on the button to change its text color.</p>
+    <button class="mouseenter-btn">Hover me</button>
+  </div>
+
+  <div class="keydown">
+    <p>Set input to change its text color. <br>
+      keydown = red <br>
+      keyup = blue
+    </p>
+    <input type="text" class="keydown-input">
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./kuis07.js">
+  </script>
+</body>
+
+</html>
