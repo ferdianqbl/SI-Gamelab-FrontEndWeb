@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar AJAX | Gamelab Indonesia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #F1F5F8;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    input {
+      border: 2px solid #C9D8E4;
+    }
+
+    button {
+      background-color: #FF7F11;
+      border: 0;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    input,
+    button {
+      border-radius: 5px;
+      font-size: 1.3rem;
+      padding: 8px;
+    }
+
+    .prediction-container {
+      display: none;
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    p {
+      margin: 5px auto;
+    }
+
+    p.result {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <input type="text" id="name" name="name" placeholder="Masukkan nama">
+    <button type="button">Prediksi</button>
+
+    <div class="prediction-container">
+      <p>Hasil prediksi :</p>
+      <p class="result"></p>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+
+      $('button').click(function () {
+        $.ajax({
+          url: 'https://api.genderize.io/',
+          method: 'GET',
+          data: {
+            name: $('input').val()
+          },
+          success: function (res) {
+            $('.prediction-container').show();
+
+            (res.gender == 'male') ? $('.result').text('Laki-laki') : $('.result').text('Perempuan');
+          }
+        })
+      });
+    });
+  </script>
+</body>
+
+</html>
