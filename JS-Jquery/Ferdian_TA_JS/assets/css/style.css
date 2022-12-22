@@ -1,1 +1,100 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background: rgb(0, 5, 68);
+  border-bottom: 1px solid rgb(0, 149, 255);
+}
+.navbar .navbar-brand {
+  color: rgb(0, 149, 255);
+  font-weight: 600;
+}
+
+.hero {
+  background: rgb(0, 5, 68);
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  color: #fff;
+}
+.hero p.quotes {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.hero p.quotes span {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 1rem;
+}
+
+.news-list {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.news-list button.btn {
+  margin: 0.85rem 1rem;
+}
+.news-list .btn-all {
+  border: 1.05px solid rgb(0, 5, 68);
+}
+.news-list .btn-all:hover, .news-list .btn-all.active {
+  background: rgb(0, 5, 68);
+  color: #fff;
+}
+.news-list .btn-new {
+  border: 1.05px solid rgb(0, 15, 226);
+}
+.news-list .btn-new:hover, .news-list .btn-new.active {
+  background: rgb(0, 15, 226);
+  color: #fff;
+}
+.news-list .btn-national {
+  border: 1.05px solid rgb(0, 226, 188);
+}
+.news-list .btn-national:hover, .news-list .btn-national.active {
+  background: rgb(0, 226, 188);
+  color: #fff;
+}
+.news-list .btn-international {
+  border: 1.05px solid rgb(185, 226, 0);
+}
+.news-list .btn-international:hover, .news-list .btn-international.active {
+  background: rgb(185, 226, 0);
+  color: #fff;
+}
+.news-list .btn-sport {
+  border: 1.05px solid rgb(226, 154, 0);
+}
+.news-list .btn-sport:hover, .news-list .btn-sport.active {
+  background: rgb(226, 154, 0);
+  color: #fff;
+}
+.news-list .btn-economy {
+  border: 1.05px solid rgb(207, 0, 226);
+}
+.news-list .btn-economy:hover, .news-list .btn-economy.active {
+  background: rgb(207, 0, 226);
+  color: #fff;
+}
+.news-list .btn-technology {
+  border: 1.05px solid rgb(226, 98, 0);
+}
+.news-list .btn-technology:hover, .news-list .btn-technology.active {
+  background: rgb(226, 98, 0);
+  color: #fff;
+}
+.news-list .btn-entertainment {
+  border: 1.05px solid rgb(68, 0, 226);
+}
+.news-list .btn-entertainment:hover, .news-list .btn-entertainment.active {
+  background: rgb(68, 0, 226);
+  color: #fff;
+}
+.news-list .btn-lifestyle {
+  border: 1.05px solid rgb(226, 0, 83);
+}
+.news-list .btn-lifestyle:hover, .news-list .btn-lifestyle.active {
+  background: rgb(226, 0, 83);
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

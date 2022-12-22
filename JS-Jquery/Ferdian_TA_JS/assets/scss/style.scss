@@ -1,0 +1,131 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+// NAVBAR
+.navbar {
+  background: rgb(0, 5, 68);
+  border-bottom: 1px solid rgb(0, 149, 255);
+  .navbar-brand {
+    color: rgb(0, 149, 255);
+    font-weight: 600;
+  }
+}
+
+// HERO
+.hero {
+  background: rgb(0, 5, 68);
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  color: #fff;
+
+  p.quotes {
+    font-size: 2rem;
+    font-weight: 600;
+
+    span {
+      display: block;
+      font-size: 1rem;
+      font-weight: normal;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.news-list {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  button.btn {
+    margin: 0.85rem 1rem;
+  }
+
+  .btn-all {
+    border: 1.05px solid rgb(0, 5, 68);
+
+    &:hover,
+    &.active {
+      background: rgb(0, 5, 68);
+      color: #fff;
+    }
+  }
+
+  .btn-new {
+    border: 1.05px solid rgb(0, 15, 226);
+
+    &:hover,
+    &.active {
+      background: rgb(0, 15, 226);
+      color: #fff;
+    }
+  }
+
+  .btn-national {
+    border: 1.05px solid rgb(0, 226, 188);
+
+    &:hover,
+    &.active {
+      background: rgb(0, 226, 188);
+      color: #fff;
+    }
+  }
+
+  .btn-international {
+    border: 1.05px solid rgb(185, 226, 0);
+
+    &:hover,
+    &.active {
+      background: rgb(185, 226, 0);
+      color: #fff;
+    }
+  }
+
+  .btn-sport {
+    border: 1.05px solid rgb(226, 154, 0);
+
+    &:hover,
+    &.active {
+      background: rgb(226, 154, 0);
+      color: #fff;
+    }
+  }
+
+  .btn-economy {
+    border: 1.05px solid rgb(207, 0, 226);
+
+    &:hover,
+    &.active {
+      background: rgb(207, 0, 226);
+      color: #fff;
+    }
+  }
+
+  .btn-technology {
+    border: 1.05px solid rgb(226, 98, 0);
+
+    &:hover,
+    &.active {
+      background: rgb(226, 98, 0);
+      color: #fff;
+    }
+  }
+
+  .btn-entertainment {
+    border: 1.05px solid rgb(68, 0, 226);
+
+    &:hover,
+    &.active {
+      background: rgb(68, 0, 226);
+      color: #fff;
+    }
+  }
+
+  .btn-lifestyle {
+    border: 1.05px solid rgb(226, 0, 83);
+
+    &:hover,
+    &.active {
+      background: rgb(226, 0, 83);
+      color: #fff;
+    }
+  }
+}

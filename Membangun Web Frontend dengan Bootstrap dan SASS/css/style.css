@@ -1,0 +1,44 @@
+body {
+  padding: 30px;
+}
+
+p {
+  padding: 0;
+  padding: 30px;
+}/*# sourceMappingURL=style.css.map */s.map */
+}
+
+body {
+  background: rgb(0, 0, 94);
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  color: rgb(139, 255, 139);
+}/*# sourceMappingURL=style.css.map */, 139);
+}
+
+.par-3 {
+  color: rgb(139, 255, 139);
+}
+
+.my-btn-primary {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  background: blanchedalmond;
+  color: black;
+}
+
+.my-btn-secondary {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.5rem;
+  background: red;
+}/*# sourceMappingURL=style.css.map */
