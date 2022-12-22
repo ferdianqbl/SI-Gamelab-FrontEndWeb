@@ -1,0 +1,19 @@
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+body {
+  background: rgb(0, 0, 94);
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  color: rgb(139, 255, 139);
+}/*# sourceMappingURL=style.css.map */
