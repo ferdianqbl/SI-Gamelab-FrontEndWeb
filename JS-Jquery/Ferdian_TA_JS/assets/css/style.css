@@ -70,19 +70,30 @@ h1.section-title {
 .weather-list .weather-show {
   padding: 5rem 0;
 }
+.weather-list .card-bg-1 {
+  background: rgb(0, 179, 113);
+}
+.weather-list .card-bg-2 {
+  background: rgb(0, 149, 255);
+}
+.weather-list .card-bg-3 {
+  background: rgb(214, 168, 0);
+}
 .weather-list .weather-card {
-  background: rgb(0, 5, 68);
   border-radius: 10px;
   padding: 1rem;
-  margin-bottom: 1rem;
   color: #fff;
-}
-.weather-list .weather-card .temp-group {
   border-right: 1px solid rgb(0, 149, 255);
+  position: relative;
+  height: 100%;
 }
 .weather-list .weather-card .temp-group h1.temp-value {
+  font-size: 4rem;
   display: flex;
 }
 .weather-list .weather-card .temp-group h1.temp-value span.temp-unit {
   font-size: 1rem;
+}
+.weather-list .weather-card .weather-detail .date-value {
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */

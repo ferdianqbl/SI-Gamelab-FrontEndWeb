@@ -21,7 +21,7 @@
 
   <div class="hero">
     <div class="container">
-      <div class="row justify-content-center align-items-center">
+      <div class="row justify-content-center align-items-center flex-column-reverse flex-md-row">
         <div class="col-md-6">
           <h1 class="hero-title">
             Don't let the <span>weather</span> stop your activities
@@ -30,7 +30,8 @@
             We are here to help you know the latest weather. use us in each of your activities and feel the benefits
           </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 mb-5 mb-md-0">
+          <img src="./assets/images/hero-img.avif" class="img-fluid rounded-circle" alt="">
         </div>
       </div>
     </div>
@@ -44,21 +45,7 @@
         <button class="search-btn" id="search-btn">Search</button>
       </div>
 
-      <div class="weather-show row row-cols-1 row-cols-md-2 g-4" id="weather-show">
-        <div class="weather-card col">
-          <p class="weather-value" id="weather-value">Sunny</p>
-          <div class="weather-detail-group row justify-content-start align-items-center">
-            <div class="temp-group col-3">
-              <h1 class="temp-value" id="temp-value">25
-                <span class="temp-unit" id="temp-unit">°C</span>
-              </h1>
-            </div>
-            <div class="weather-detail col-6">
-              <p class="date-value" id="date-value">Jakarta, Indonesia</p>
-              <p class="location-value" id="location-value">Jakarta, Indonesia</p>
-            </div>
-          </div>
-        </div>
+      <div class="weather-show row row-cols-2 g-4" id="weather-show">
       </div>
     </div>
   </div>

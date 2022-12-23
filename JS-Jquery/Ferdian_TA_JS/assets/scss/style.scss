@@ -80,38 +80,40 @@ h1.section-title {
     padding: 5rem 0;
   }
 
+  .card-bg-1 {
+    background: rgb(0, 179, 113);
+  }
+
+  .card-bg-2 {
+    background: rgb(0, 149, 255);
+  }
+
+  .card-bg-3 {
+    background: rgb(214, 168, 0);
+  }
+
   .weather-card {
-    background: rgb(0, 5, 68);
     border-radius: 10px;
     padding: 1rem;
-    margin-bottom: 1rem;
     color: #fff;
+    border-right: 1px solid rgb(0, 149, 255);
+    position: relative;
+    height: 100%;
 
     .temp-group {
       h1.temp-value {
+        font-size: 4rem;
         display: flex;
         span.temp-unit {
           font-size: 1rem;
         }
       }
-
-      border-right: 1px solid rgb(0, 149, 255);
     }
 
-    // h2.city-name {
-    //   font-size: 1.5rem;
-    //   font-weight: 600;
-    //   margin-bottom: 1rem;
-    // }
-    // p.city-temp {
-    //   font-size: 1.5rem;
-    //   font-weight: 600;
-    //   margin-bottom: 1rem;
-    // }
-    // p.city-desc {
-    //   font-size: 1.2rem;
-    //   font-weight: 400;
-    //   margin-bottom: 1rem;
-    // }
+    .weather-detail {
+      .date-value {
+        font-weight: 300;
+      }
+    }
   }
 }
