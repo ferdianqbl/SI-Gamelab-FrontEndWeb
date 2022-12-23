@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News | Home</title>
+  <title>Weather App</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -15,37 +15,52 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container d-flex justify-content-center align-items-center">
-      <a class="navbar-brand text-center p-0 m-0 py-2">NewsPedia</a>
+      <a class="navbar-brand text-center p-0 m-0 py-2">WeatherPedia</a>
     </div>
   </nav>
 
   <div class="hero">
     <div class="container">
       <div class="row justify-content-center align-items-center">
-        <div class="col-md-9 text-center">
-          <p class="quotes">
-            "Education is the most powerful weapon which you can use to change the world."
-            <span>- Nelson Mandela</span>
+        <div class="col-md-6">
+          <h1 class="hero-title">
+            Don't let the <span>weather</span> stop your activities
+          </h1>
+          <p class="hero-text">
+            We are here to help you know the latest weather. use us in each of your activities and feel the benefits
           </p>
+        </div>
+        <div class="col-md-6">
         </div>
       </div>
     </div>
   </div>
 
-  <div class="news-list">
-    <div class="container text-center d-flex flex-wrap justify-content-center align-items-center">
-      <button class="btn btn-all active">Semua</button>
-      <button class="btn btn-new">Terbaru</button>
-      <button class="btn btn-national">Nasional</button>
-      <button class="btn btn-international">Internasional</button>
-      <button class="btn btn-economy">Ekonomi</button>
-      <button class="btn btn-sport">Olahraga</button>
-      <button class="btn btn-technology">Teknologi</button>
-      <button class="btn btn-entertainment">Hiburan</button>
-      <button class="btn btn-lifestyle">Gaya Hidup</button>
-    </div>
+  <div class="weather-list">
+    <div class="container">
+      <h1 class="section-title text-center mb-5">Find Your Local Weather Here!</h1>
+      <div class="input-group form-floating d-flex justify-content-center">
+        <input type="text" class="w-50" placeholder="Enter your city or country name" id="city-name">
+        <button class="search-btn" id="search-btn">Search</button>
+      </div>
 
-    <div class="card-news-group"></div>
+      <div class="weather-show row row-cols-1 row-cols-md-2 g-4" id="weather-show">
+        <div class="weather-card col">
+          <p class="weather-value" id="weather-value">Sunny</p>
+          <div class="weather-detail-group row justify-content-start align-items-center">
+            <div class="temp-group col-3">
+              <h1 class="temp-value" id="temp-value">25
+                <span class="temp-unit" id="temp-unit">°C</span>
+              </h1>
+            </div>
+            <div class="weather-detail col-6">
+              <p class="date-value" id="date-value">Jakarta, Indonesia</p>
+              <p class="location-value" id="location-value">Jakarta, Indonesia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -53,6 +68,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 

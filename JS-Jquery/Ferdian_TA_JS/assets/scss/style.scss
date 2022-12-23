@@ -1,6 +1,14 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+h1.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: rgb(0, 5, 68);
+}
+
 // NAVBAR
 .navbar {
   background: rgb(0, 5, 68);
@@ -17,115 +25,93 @@ body {
   padding-top: 8rem;
   padding-bottom: 5rem;
   color: #fff;
-
-  p.quotes {
-    font-size: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  h1.hero-title {
+    font-size: 2.5rem;
     font-weight: 600;
+    margin-bottom: 1rem;
 
     span {
-      display: block;
-      font-size: 1rem;
-      font-weight: normal;
-      margin-top: 1rem;
+      color: rgb(0, 149, 255);
     }
+  }
+
+  p.hero-text {
+    color: rgb(172, 172, 172);
+    font-weight: 400;
+    margin-bottom: 1rem;
   }
 }
 
-.news-list {
-  padding-top: 5rem;
+.weather-list {
+  min-height: 100vh;
+  padding-top: 8rem;
   padding-bottom: 5rem;
 
-  button.btn {
-    margin: 0.85rem 1rem;
-  }
+  .input-group {
+    input#city-name {
+      border-radius: 10px;
+      border: 1.05px solid rgb(0, 5, 68);
+      border-right: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding: 0.85rem 1rem;
+    }
 
-  .btn-all {
-    border: 1.05px solid rgb(0, 5, 68);
-
-    &:hover,
-    &.active {
-      background: rgb(0, 5, 68);
-      color: #fff;
+    button.search-btn {
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      background-color: transparent;
+      border: 1.05px solid rgb(0, 5, 68);
+      border-left: none;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      &:hover,
+      &.active {
+        background: rgb(0, 5, 68);
+        color: #fff;
+      }
     }
   }
 
-  .btn-new {
-    border: 1.05px solid rgb(0, 15, 226);
-
-    &:hover,
-    &.active {
-      background: rgb(0, 15, 226);
-      color: #fff;
-    }
+  .weather-show {
+    padding: 5rem 0;
   }
 
-  .btn-national {
-    border: 1.05px solid rgb(0, 226, 188);
+  .weather-card {
+    background: rgb(0, 5, 68);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
 
-    &:hover,
-    &.active {
-      background: rgb(0, 226, 188);
-      color: #fff;
+    .temp-group {
+      h1.temp-value {
+        display: flex;
+        span.temp-unit {
+          font-size: 1rem;
+        }
+      }
+
+      border-right: 1px solid rgb(0, 149, 255);
     }
-  }
 
-  .btn-international {
-    border: 1.05px solid rgb(185, 226, 0);
-
-    &:hover,
-    &.active {
-      background: rgb(185, 226, 0);
-      color: #fff;
-    }
-  }
-
-  .btn-sport {
-    border: 1.05px solid rgb(226, 154, 0);
-
-    &:hover,
-    &.active {
-      background: rgb(226, 154, 0);
-      color: #fff;
-    }
-  }
-
-  .btn-economy {
-    border: 1.05px solid rgb(207, 0, 226);
-
-    &:hover,
-    &.active {
-      background: rgb(207, 0, 226);
-      color: #fff;
-    }
-  }
-
-  .btn-technology {
-    border: 1.05px solid rgb(226, 98, 0);
-
-    &:hover,
-    &.active {
-      background: rgb(226, 98, 0);
-      color: #fff;
-    }
-  }
-
-  .btn-entertainment {
-    border: 1.05px solid rgb(68, 0, 226);
-
-    &:hover,
-    &.active {
-      background: rgb(68, 0, 226);
-      color: #fff;
-    }
-  }
-
-  .btn-lifestyle {
-    border: 1.05px solid rgb(226, 0, 83);
-
-    &:hover,
-    &.active {
-      background: rgb(226, 0, 83);
-      color: #fff;
-    }
+    // h2.city-name {
+    //   font-size: 1.5rem;
+    //   font-weight: 600;
+    //   margin-bottom: 1rem;
+    // }
+    // p.city-temp {
+    //   font-size: 1.5rem;
+    //   font-weight: 600;
+    //   margin-bottom: 1rem;
+    // }
+    // p.city-desc {
+    //   font-size: 1.2rem;
+    //   font-weight: 400;
+    //   margin-bottom: 1rem;
+    // }
   }
 }
