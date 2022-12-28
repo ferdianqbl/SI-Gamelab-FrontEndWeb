@@ -50,6 +50,7 @@ $(document).ready(function () {
         q: name,
       },
       success: (res) => {
+        console.log(res)
         if (!res) return swal("", "Country or city not found", "warning");
 
         swal.close();
